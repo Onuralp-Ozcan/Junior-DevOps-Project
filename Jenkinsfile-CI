@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    environment {
+        DOCKER = credentials('Dockerhub')
+    }
+    stages {
+        stage('login to dockerhub') {
+            steps {
+                sh "docker login --username ${DOCKER_USR} --password ${DOCKER_PSW}"
+            }
+        }
+        
+        stage('clone the repository') {
+            steps {
+                sh "git clone https://github.com/Onuralp-Ozcan/konzek-junior.git || echo 'already cloned' "
+                sh "cd konzek-junior ; git pull "
+            }
+        }
+        
+        stage('build and push the image') {
+            steps {
+                sh "ls -al"
+                sh "docker build -t ${DOCKER_USR}/konzek-junior:latest -f ./konzek-junior/Dockerfile ./konzek-junior"
+                sh "docker push ${DOCKER_USR}/konzek-junior:latest"
+            }
+        }
+    }
+}

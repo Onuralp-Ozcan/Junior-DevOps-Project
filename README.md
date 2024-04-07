@@ -1,4 +1,4 @@
-# Konzek JunDor DevOps Assignment
+# Konzek Junior DevOps Assignment
 
 ## Objective
 This project aims to streamline the deployment processes of a web application through the implementation of a DevOps approach.

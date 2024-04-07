@@ -46,4 +46,4 @@ This project aims to streamline the deployment processes of a web application th
 
 #### The final appearance of the website should be like this
 
-![Konzek](/konzek.png)
+![Konzek](/Konzek.png)

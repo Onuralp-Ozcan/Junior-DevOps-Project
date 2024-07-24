@@ -1,4 +1,4 @@
-# Konzek Junior DevOps Assignment
+# Junior DevOps Assignment
 
 ## Objective
 This project aims to streamline the deployment processes of a web application through the implementation of a DevOps approach.
@@ -22,7 +22,7 @@ This project aims to streamline the deployment processes of a web application th
 4. Define the Jenkins server URL in the GitHub repository's GitHub webhook settings.
 
 ### Step 3: Creating the CI Pipeline
-1. In the Jenkins console, create a pipeline named KONZEK-CI.
+1. In the Jenkins console, create a pipeline named Example-CI.
 2. Enable the GitHub hook trigger for GITScm polling option in the pipeline's build triggers section to trigger the pipeline on push events.
 3. In the pipeline's definition section, select the pipeline script from SCM option.
 4. Enter the URL of the GitHub repository and set the script path to Jenkinsfile-CI.
@@ -34,7 +34,7 @@ This project aims to streamline the deployment processes of a web application th
 
 
 ### Step 4: Creating the CD Pipeline
-1. In the Jenkins console, create a pipeline named KONZEK-CD.
+1. In the Jenkins console, create a pipeline named Example-CD.
 2. In the pipeline's definition section, select the pipeline script from SCM option.
 3. Enter the URL of the GitHub repository and set the script path to Jenkinsfile-CD.
 4. After the CI pipeline has run successfully, we can trigger this pipeline to build.
@@ -46,4 +46,4 @@ This project aims to streamline the deployment processes of a web application th
 
 #### The final appearance of the website should be like this
 
-![Konzek](/Konzek.png)
+![Home](/Home.png)

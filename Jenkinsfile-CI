@@ -13,7 +13,7 @@ pipeline {
         
         stage('clone the repository') {
             steps {
-                sh "git clone https://${TOKEN_PSW}@github.com/Onuralp-Ozcan/konzek-junior.git || echo 'already cloned' "
+                sh "git clone https://$TOKEN_PSW@github.com/Onuralp-Ozcan/konzek-junior.git || echo 'already cloned' "
                 sh "cd konzek-junior ; git pull "
             }
         }

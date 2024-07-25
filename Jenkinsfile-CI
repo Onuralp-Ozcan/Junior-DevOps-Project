@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER = credentials('Dockerhub')
-        TOKEN = credentials('github')
+        TOKEN = credentials('Github')
     }
     stages {
         stage('login to dockerhub') {

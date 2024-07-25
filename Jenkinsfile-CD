@@ -12,9 +12,9 @@ pipeline {
         
         stage('pull and run the image') {
             steps {
-                sh "docker pull $DOCKER_USR/konzek-junior:latest || echo 'image is up to date' "
+                sh "docker pull $DOCKER_USR/devops-junior:latest || echo 'image is up to date' "
                 sh "docker container rm -f web"
-                sh "docker container run -d --name web -p 80:80 $DOCKER_USR/konzek-junior:latest"
+                sh "docker container run -d --name web -p 80:80 $DOCKER_USR/devops-junior:latest"
             }
         }
     }

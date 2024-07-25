@@ -21,8 +21,8 @@ pipeline {
         stage('build and push the image') {
             steps {
                 sh "ls -al"
-                sh "docker build -t $DOCKER_USR/konzek-junior:latest -f ./konzek-junior/Dockerfile ./konzek-junior"
-                sh "docker push $DOCKER_USR/konzek-junior:latest"
+                sh "docker build -t $DOCKER_USR/devops-junior:latest -f ./konzek-junior/Dockerfile ./konzek-junior"
+                sh "docker push $DOCKER_USR/devops-junior:latest"
             }
         }
     }

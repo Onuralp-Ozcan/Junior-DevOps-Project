@@ -1,4 +1,4 @@
-# Junior DevOps Assignment
+# Junior DevOps Project
 
 ## Objective
 This project aims to streamline the deployment processes of a web application through the implementation of a DevOps approach.
